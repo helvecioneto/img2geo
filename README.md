@@ -1,5 +1,5 @@
 # Img2Geo - Convert PNG file to GeoTiff
-To use this algorithm, simply inform the png file directory, the coordinates (lat, lon) of the central point and width and height in (km).
+To use this algorithm, simply inform the png file directory, the coordinates (lat, lon) of the central point and width and height in (meters).
 
 ## Install
     $python setup.py
