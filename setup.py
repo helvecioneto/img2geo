@@ -22,6 +22,5 @@ setup(
                       "geopy",
                       "gdal",
                       "osr",
-                      "PIL",
 		      ]
 )
