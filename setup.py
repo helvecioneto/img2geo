@@ -25,6 +25,6 @@ setup(
                       "PIL",
                       "math.sqrt",
 		      "math.atan",
-                      "math.pi",
+                      "math.pi"
 		      ]
 )
