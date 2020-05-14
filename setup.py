@@ -23,8 +23,5 @@ setup(
                       "gdal",
                       "osr",
                       "PIL",
-                      "math.sqrt",
-		      "math.atan",
-                      "math.pi"
 		      ]
 )
