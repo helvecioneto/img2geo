@@ -23,6 +23,8 @@ setup(
                       "gdal",
                       "osr",
                       "PIL",
-                      "math",
-                      ]
+                      "math.sqrt",
+		      "math.atan",
+                      "math.pi",
+		      ]
 )
