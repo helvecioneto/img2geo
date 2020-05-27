@@ -8,6 +8,12 @@ from math import sqrt,atan,pi
 from PIL import Image
 
 
+### Exemple
+python img2geo.py 20200101143500_12_binary.png -22.68918 -45.00655 15000 15000
+gdal_translate -of netCDF -co "FORMAT=NC4" 20200101143500_12_binary.tif output.nc
+
+
+
 def read_img(img):
 	img = Image.open(img)
 	return np.array(img)
