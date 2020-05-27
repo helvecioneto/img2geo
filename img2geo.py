@@ -9,8 +9,19 @@ from PIL import Image
 
 
 ### Exemple
-python img2geo.py 20200101143500_12_binary.png -22.68918 -45.00655 15000 15000
-gdal_translate -of netCDF -co "FORMAT=NC4" 20200101143500_12_binary.tif output.nc
+#python img2geo.py 20200101143500_12_binary.png -22.68918 -45.00655 15000 15000
+
+#gdalwarp -overwrite -s_srs EPSG:4326 -t_srs EPSG:29193 -te  20200101143500_12_binary.tif projected.tif
+#gdal_translate -of netCDF -co "FORMAT=NC4" projected.tif output.nc
+
+#http://bboxfinder.com/#-22.82456489647584,-45.15267103108382,-22.553659694319226,-44.86071589083125
+
+
+#-2578129.4136,-5026372.0313
+#-22.553659694319226,-45.15267103108382
+
+#-2610817.4027,-4993871.1506
+#-22.824573,-44.860708
 
 
 
@@ -51,7 +62,7 @@ def calc_bbox(center_lat,center_lon,width,height):
 
 def create_tiff(data,bbox):
     BBOX = bbox
-
+    print(BBOX)
     xres = abs(BBOX[0]-BBOX[2]) / data.shape[1]
     yres = abs(BBOX[1]-BBOX[3]) / data.shape[0]
 
